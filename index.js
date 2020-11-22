@@ -39,47 +39,47 @@
 //let age = 31;
 //alert(`Мне ${age} год!`);
 
-//let i = 29;
+let i2 = 29;
 
-//while (i>=29 && i<=60) {
-    //i++
-   // console.log (i);    
-//}
+while (i2>=29 && i2<=60) {
+    i2++
+    console.log (i2);    
+}
 
-//let a = 12
+let a = 12
 
-//while (a<=670) {
-   //if(a%10==0) {
-       //console.log(a)
-   //}
-   //a++
-//}
+while (a<=670) {
+   if(a%10==0) {
+       console.log(a)
+   }
+   a++
+}
 
-//let s = 10;
+let s = 10;
 
-//for( s=10; s<=100; s++) {
-    //console.log(s);
-//}
+for( s=10; s<=100; s++) {
+    console.log(s);
+}
 
-//const arr = [1,6,8,14,0,4];
-//let d = 0;
+const arr6 = [1,6,8,14,0,4];
+let d = 0;
 
-//for(d=0; d<arr.length; d++) {
-    //if(arr[d]>3 && arr[d]<10) {
-        //console.log(arr[d]);
-    //}
-//}
+for(d=0; d<arr6.length; d++) {
+    if(arr6[d]>3 && arr6[d]<10) {
+        console.log(arr6[d]);
+    }
+}
 
-//const arr = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+const arr8 = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 
-//for(let g = 0; g<arr.length; g++) {
-    //if(arr[g]=='Sunday' || arr[g]=='Saturday') {
-        //console.log('%c%s', 'font-weight:bold;', arr[g]);
-    //}
-    //else {
-        //console.log(arr[g]);
-    //}
-//}
+for(let g = 0; g<arr8.length; g++) {
+    if(arr8[g]=='Sunday' || arr8[g]=='Saturday') {
+        console.log('%c%s', 'font-weight:bold;', arr8[g]);
+    }
+    else {
+        console.log(arr8[g]);
+    }
+}
 
 const arr7 = [1,2,3,4,5,6,7,8,9];
 
@@ -90,18 +90,33 @@ for (let i7 = 0; i7<arr7.length; i7++) {
 }
 console.log(str7);
 
-const arr9 = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
-var myDate= new Date();
-var day = arr9[myDate.getDay];
-console.log(day);
+const week = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+let d9= new Date();
+let day = d9.getDay();
+let i9 = 0;
 
-for (let i9 = 0; i9<arr9.length; i9++) {
-        if (day==arr9[i9]) {        
-        console.log('%c%s','font-weight:Italic;',arr9[i9]);
+for (let i9 = 0; i9<week.length; i9++) {
+    if (i9==day) {        
+    document.write(`<p><i>${week[i9]}</i></p>`);
     }
-    
+    else {
+        document.write(`<p>${week[i9]}</i></p>`);
+    }
 }
 
+console.log (week[i9]);
+
+const n = 1000;
+let newN = n;
+let num = 0;
+
+for (let i10 = 0; newN>=50; i10++) {
+    newN = newN/2;
+    num++;
+}
+
+console.log(newN)
+console.log(num);
 
 
 
