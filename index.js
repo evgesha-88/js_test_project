@@ -39,7 +39,7 @@
 //let age = 31;
 //alert(`Мне ${age} год!`);
 
-let i2 = 29;
+/*let i2 = 29;
 
 while (i2>=29 && i2<=60) {
     i2++
@@ -116,7 +116,81 @@ for (let i10 = 0; newN>=50; i10++) {
 }
 
 console.log(newN)
-console.log(num);
+console.log(num);*/
+
+let arr1 = ['a','b','c'];
+let arr2 = [1,2,3];
+let arr = arr1.concat(arr2);
+console.log(arr);
+
+let arr3 = ['a','b','c'];
+arr3.push(1,2,3);
+console.log(arr3);
+
+let arr4 = [1,2,3];
+arr4.reverse();
+console.log(arr4);
+
+let arr5 = [1,2,3,4,5];
+let arr6 = arr5.slice(0,3);
+console.log(arr6);
+let arr7 = arr5.slice(3);
+console.log(arr7);
+
+let obj1 = {js:'test', jq:'hello', css:'world'};
+console.log(Object.keys(obj1));
+
+let arr20 = [1,2,3,4,5];
+//let arr30 = [];
+for(let a =0; a< arr20.length; a++) {
+    //let arr30 = [];
+    let lastindex = arr20.pop();
+    arr20.unshift(lastindex);
+    console.log(arr20);
+       
+} 
+
+let arr8 = [[1,2,3],[4,5],[6]];
+console.log(arr8.length);
+
+/*for( let i33 = 0, i33<= arr8.length, i33++) {
+    for (let j = 0, j<=arr8[i33].length, j++) {
+        let sum = 0;
+        sum+=arr[i33];
+        console.log(sum);
+    }
+}*/
+
+let arr10 = [2,3,4,5,6];
+let arr11 = arr10.map(x=> x*=x);
+console.log(arr11);
+
+let arr12 = [-1,0,2,-5,7,3,-9];
+let arr13 = arr12.filter(number=>number>0);
+console.log(arr13);
+
+let arr14 = [23,35,67,89,72];
+let arr15 = arr14.reduce((sum,number)=>sum+number);
+console.log(arr15);
+
+let city1 = {name:"Город2", population: 10000000,};
+let city2 = {name:"Город1", population: 1e6,}
+
+let day = new Date();
+let today = day.getDate();
+let today_month = day.getMonth();
+let now_year = day.getFullYear();
+console.log(today);
+console.log(today_month);
+console.log(now_year);
+console.log (now_year+"-"+today_month+"-"+today);
+
+const olddate = new Date(3600*24);
+console.log(olddate);
+
+
+
+
 
 
 
