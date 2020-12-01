@@ -141,9 +141,7 @@ let obj1 = {js:'test', jq:'hello', css:'world'};
 console.log(Object.keys(obj1));
 
 let arr20 = [1,2,3,4,5];
-//let arr30 = [];
-for(let a =0; a< arr20.length; a++) {
-    //let arr30 = [];
+for(let a =0; a< arr20.length; a++) {    
     let lastindex = arr20.pop();
     arr20.unshift(lastindex);
     console.log(arr20);
