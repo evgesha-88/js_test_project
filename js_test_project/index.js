@@ -167,29 +167,26 @@ for (let u = 0; u < arr45.length; u++) {
         console.log(arr45[u][s]);
         for ( let p = 0; p < arr45[u][s].length; p++) {
             console.log(arr45[u][s][p]);
-            sum+=arr45[u][s][p];  
+            sum45+=arr45[u][s][p];  
                       
         }
     }
     
 }
-console.log(sum);
+console.log(sum45);
 
-let arr10_1 = [1,2,5];
-let arr10_2 = [1,4,3];
+let arr10_1 = [1,2,3];
+let arr10_2 = [1,2,3];
 
-for ( let n = 0; n < arr10_1.length; n++) {
-    for (let r = 0; r < arr10_2.length; r++) {
-        if (arr10_1[n] != arr10_2[r] && arr10_1.length != arr10_2.length) {
+if (arr10_1.length==arr10_2.length) {
+    for (let n=0;  n<arr10_1.length; n++) {
+        if (arr10_1[n] !=arr10_2[n]) {
             console.log (`false`);
-        } else { console.log (`true`);
-    }
+        } else {
+            console.log (`true`);
+        }
     }
 }
-
-    
-
-
 let arr10 = [2,3,4,5,6];
 let arr11 = arr10.map(x=> x*=x);
 console.log(arr11);
@@ -205,6 +202,31 @@ console.log(arr15);
 let city1 = {name:"Город2", population: 10000000,};
 let city2 = {name:"Город1", population: 1e6,}
 
+console.log(city1);
+console.log(city2);
+
+city1.getName = function  () {
+    return this.name;
+};
+
+city2.getName = function () {
+    return this.name;
+};
+
+console.log (city1.getName());
+console.log (city2.getName());
+
+city1.exportStr = function () {
+    return `name = ${this.name} population = ${this.name}`;
+};
+
+city2.exportStr = function () {
+    return `name = ${this.name} population = ${this.name}`;
+};
+
+console.log (city1.exportStr());
+console.log (city2.exportStr());
+
 let day = new Date();
 let today = day.getDate();
 let today_month = day.getMonth();
@@ -217,18 +239,24 @@ console.log (now_year+"-"+today_month+"-"+today);
 const olddate = new Date();
 console.log(olddate.getTime()/1000/60);  
 
-
-
-
-function buttonClick1() {
-    var input1 = document.getElementById("input1");
-    input1.value = "!!!";
+//DOM-часть
+function buttonClick5() {
+    var input5 = document.getElementById('input5');
+    alert(input5.value);
 }
 
-function buttonClick2 () {
-    var input2 = document.getElementById("input2");
-    alert(input2.value);
+function buttonClick6() {
+    var input6 = document.getElementById('input6');
+    input6.value = `Ой, я поменял текст`;
 }
+
+function inputClick (e) {    
+    alert(e.value);
+}
+
+
+
+
 
 
 
