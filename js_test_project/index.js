@@ -250,13 +250,49 @@ function buttonClick6() {
     input6.value = `Ой, я поменял текст`;
 }
 
-function inputClick (e) {    
-    alert(e.value);
+function click8 () {
+    let i8 = document.getElementById("input8").value;
+    alert(i8);
 }
 
+function click9 () {
+    document.getElementById("input9").value = "ой, я поменял текст";    
+}
 
+/*function click10 () {
+    document.getElementById("input10").value = "ой, я поменял текст"; 
+    this.click10();
+    document.getElementById("input10").value = "ой, я";       
+ 
+}*/
 
+function click11 (elem11) {
+    elem11.value = "ку-ку";
+}
+ 
+function click12 (elem12) {
+    elem12.value = "о, теперь на меня больше не нажать";
+    elem12.disabled = true;
+}
 
+function buttonClick14() {
+    document.getElementById("input14").style.color = 'red';    
+}
+
+function buttonClick15() {
+    var i15 = document.getElementById("input15");
+    i15.value = "ой, я поменял свой текст и css!";
+    i15.style.color = 'red';
+    i15.style.width = "200px";
+    i15.style.height = '30px';
+    i15.style.borderRadius = "10px"
+}
+
+function buttonClick18 () {    
+    let in18 = document.getElementById('input18');
+    let number18 = Number(in18.value);
+    number18+1;    
+}
 
 
 
