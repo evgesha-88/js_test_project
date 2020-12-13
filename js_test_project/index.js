@@ -250,6 +250,11 @@ function buttonClick6() {
     input6.value = `Ой, я поменял текст`;
 }
 
+function buttonClick7 () {
+    var img_7 = document.getElementById('img7_1');
+    
+}
+
 function click8 () {
     let i8 = document.getElementById("input8").value;
     alert(i8);
@@ -259,12 +264,14 @@ function click9 () {
     document.getElementById("input9").value = "ой, я поменял текст";    
 }
 
-/*function click10 () {
-    document.getElementById("input10").value = "ой, я поменял текст"; 
-    this.click10();
-    document.getElementById("input10").value = "ой, я";       
- 
-}*/
+function onmousedown10 (elem10) {
+    elem10.value = "ой, я поменял текст";   
+} 
+
+function onmouseup10 (elem10) {
+    elem10.value = "ой, я поменял текст ещё раз";   
+} 
+
 
 function click11 (elem11) {
     elem11.value = "ку-ку";
@@ -279,7 +286,18 @@ function buttonClick14() {
     document.getElementById("input14").style.color = 'red';    
 }
 
-function buttonClick15() {
+function buttonClick15_1() {
+    let input15 = document.getElementById("input15"); 
+    input15.style.display = "none";
+}
+
+function buttonClick15_2() {
+    let input15 = document.getElementById("input15"); 
+    input15.style.display = "block";
+    input15.style.cssFloat = "left";
+}
+
+function buttonClick16() {
     var i15 = document.getElementById("input15");
     i15.value = "ой, я поменял свой текст и css!";
     i15.style.color = 'red';
@@ -288,10 +306,79 @@ function buttonClick15() {
     i15.style.borderRadius = "10px"
 }
 
-function buttonClick18 () {    
-    let in18 = document.getElementById('input18');
+function onClick17_1 () {
+    let input17_1 = document.getElementById("input17_1");
+    let input17_2 = document.getElementById('input17_2');
+    input17_1.value = "о, теперь на меня больше не нажать";
+    input17_1.disabled = true;
+    input17_2.style.display = "block";
+}
+
+function onClick17_2 () {
+    let input17_1 = document.getElementById("input17_1");
+    let input17_2 = document.getElementById('input17_2');
+    input17_1.value = "о, на меня снова можно нажать";  
+    input17_1.disabled = false; 
+    input17_2.style.display = "none";
+}
+
+function onClick18 () {    
+    let in18 = document.getElementById('input18');    
     let number18 = Number(in18.value);
-    number18+1;    
+    number18++;   
+    in18.value = number18;  
+}
+
+function buttonClick19 () {    
+    let in19 = document.getElementById("input19");
+    in19.value = "Теперь я плаваю справа";  
+    in19.style.cssFloat = "right";  
+}
+
+function buttonClick21 () {
+    var input21_1 = document.getElementById('input21_1');
+	var input21_2 = document.getElementById('input21_2');
+	var input1Value = input21_1.value;
+	var input2Value = input21_2.value;
+	input21_1.value = input2Value;
+	input21_2.value = input1Value;   
+}
+
+function buttonClick22 () {
+    var input22_1 = document.getElementById('input22_1');
+    var input22_2 = document.getElementById('input22_2');
+	var number22 = Number(input22_1.value);
+    var square22 = number22*number22;
+    input22_2.value = square22;	
+}
+
+function buttonClick23 () {
+    var input23_1 = document.getElementById('input23_1');
+    var input23_2 = document.getElementById('input23_2');
+	var number23 = Number(input23_1.value);
+    var square23 = number23*number23;
+    
+    if (isNaN(square23)) {
+        alert("Введено не число!");	
+    } else {
+        input23_2.value = square23;	
+    }
+}
+
+function buttonClick24 () {
+	var button24 = document.getElementById('button24');
+    button24.disabled = true;
+    button24.style.cursor = "not-allowed";
+}
+
+function buttonClick25_1() {
+    let elem25_1 = document.getElementById("input25");    
+    elem25_1.value = "+";
+}
+
+function buttonClick25_2() {
+    let elem25_2 = document.getElementById("input25");    
+    elem25_2.value = "-";
 }
 
 

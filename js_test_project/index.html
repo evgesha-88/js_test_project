@@ -29,12 +29,12 @@
         <button onclick="buttonClick6()">Нажми на меня</button>
     </div>
     <div class = "seventh_button">
-        <img src="1img.jpg"><br>
+        <img id = "img7_1" src="1img.jpg"><br>
         <button onclick="buttonClick7()" type = "submit">Нажми на меня</button>
     </div>
     <input onclick = "click8()" type ="text" id = "input8" value = "Нажми на меня!"><br>
     <input onclick = "click9()" type ="text" id = "input9" value = "Нажми на меня!"><br>
-    <input onclick = "click10()" type ="text" id = "input10" value = "Нажми на меня!"><br>
+    <input onmousedown = "onmousedown10(this);onmouseup10(this);" type ="text" id = "input10" value = "Нажми на меня!"><br>
     <input onclick = "click11(this)" type ="submit" id = "input11" value = "Нажми на меня!"><br>
     <input onclick = "click12(this)" type ="submit" id = "input12" value = "Нажми на меня!"><br>
     <img src = "1img.jpg" onmouseover = "this.src='2img.jpg'" onmouseout="this.src = '1img.jpg'"><br>
@@ -42,10 +42,50 @@
         <input type = "text" id = "input14" value = "Ку-ку">
         <button onclick="buttonClick14()">Нажми на меня</button>
     </div>
-    <div class = "fivteth_button">
+    <div class = "fiveteth_button">
+        <input type = "text" id = "input15" value = "Ку-ку">
+        <button onclick="buttonClick15_1()">Нажми на меня</button>
+        <button onclick="buttonClick15_2()">Нажми потом на меня</button>
+    </div>
+    <div class = "sextith_button">
         <input type = "text" id = "input15" value = "Ку-ку">
         <button onclick="buttonClick15()">Нажми на меня</button>
     </div>
-    <input type = "button" value = "0" id = "input18" onclick = "inClick18()">
-</body>
+    <div class = "seventith_button">
+        <input onclick = "onClick17_1()" type = "submit" id = "input17_1" value = "Нажми на меня!">
+        <input onclick = "onClick17_2()" type = "submit" id = "input17_2" value = "Нажми, чтобы отблокировать элемент">
+    </div>
+    <input type = "submit" value = "0" id = "input18" onclick = "onClick18()">
+    <div class = "nintith_button">
+        <input type = "text" id = "input19" value = "Ку-ку">
+        <button onclick="buttonClick19()">Нажми на меня</button>
+    </div>
+    <div class = "twentith_button">
+        <input type = "text" id = "input20" value = "Ку-ку">
+        <button onclick="buttonClick20()">Нажми на меня</button>
+    </div>
+    <div class = "twenty_first_button">
+        <input type = "text" id = "input21_1" value = "Привет!">
+        <input type = "text" id = "input21_2" value = "Пока!">
+        <button onclick = "buttonClick21()">Нажми на меня</button>
+    </div>
+    <div class = "twenty_second_button">
+        <input type = "text" id = "input22_1" placeholder = "Введите число!">
+        <input type = "text" id = "input22_2" value = "0">
+        <button onclick = "buttonClick22()">Нажми на меня</button>
+    </div>
+    <div class = "twenty_thith_button">
+        <input type = "text" id = "input23_1" placeholder = "Введите число!"><br>
+        <input type = "text" id = "input23_2" placeholder = "Здесь появится результат"><br>
+        <button onclick = "buttonClick23()">Нажми на меня</button>
+    </div>
+    <button onclick = "buttonClick24()" id = "button24">Нажми на меня</button>
+    <div class = "twenty_fivth_button">
+        <input type = "text" id = "input25" value = ""><br>        
+        <button onclick = "buttonClick25_1()">Я добавлю +</button><br>
+        <button onclick = "buttonClick25_2()">Я добавлю -</button><br>
+        <button onclick = "buttonClick25_3()">Я добавлю /</button><br>
+        <button onclick = "buttonClick25_4()">Я добавлю *</button><br><br>
+
+    </div>
 </html>

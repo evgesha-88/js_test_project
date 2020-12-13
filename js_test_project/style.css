@@ -24,3 +24,11 @@ input {
 #input18 {
     width: 200px;
 }
+
+.ninth_button {
+    width: 500px;
+}
+
+#input17_2 {
+    display: none;
+}
